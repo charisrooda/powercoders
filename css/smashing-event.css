@@ -1,0 +1,49 @@
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+}
+
+.heading-unstyled {
+  display: block;
+}
+
+.heading-unstyled::before {
+  display: none;
+}
+
+
+.hero {
+  min-height: 40vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #000;
+  padding: 1rem;
+}
+
+.hero h1,
+.hero h2,
+.hero p,
+aside p {
+  margin: 0;
+}
+
+aside {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+aside .btn {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+/* Utilitiy */
+.layout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15ch, 1fr));
+  gap: 1rem;
+}
